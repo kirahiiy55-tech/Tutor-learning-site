@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language learning add (Yakimova)</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/add.css" rel="stylesheet">
+
+    <div class="sticky-top" id="header">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container-fluid" id="nav-container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto" id="nav-list">
+                        <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav.home">Головна</a></li>
+                        <li class="nav-item"><a class="nav-link" href="game1.html" data-i18n="nav.game1">Словотвір</a></li>
+                        <li class="nav-item"><a class="nav-link" href="game2.html" data-i18n="nav.game2">Картки</a></li>
+                        <li class="nav-item"><a class="nav-link" href="practice.html" data-i18n="nav.practice">Практика</a></li>
+                        <li class="nav-item"><a class="nav-link" href="clues.html" data-i18n="nav.clues">Ключі</a></li>
+                    </ul>
+                </div>
+
+                <div class="d-flex ms-3 ms-md-0" id="class-start">
+                    <h5>
+                        <a href="https://kirahiiy55-tech.github.io/Tutor-site/form.html" target="_blank" rel="noopener noreferrer">
+                            <span data-i18n="nav.classes">Навчання</span>
+                        </a>
+                    </h5>
+                    <span class="divider">|</span>
+                    <button onclick="setLanguage('ua')" class="lang">UA</button>
+                    <span class="divider">|</span>
+                    <button onclick="setLanguage('ru')" class="lang">RU</button>
+                </div>
+            </div>
+        </nav>
+    </div>
+</head>
+
+<body>
+    <main>
+        <h2 id="game-header" data-i18n="games.game1">Гра "Словотвір"</h2>
+
+        <h4 data-i18n="game1.rule1" class="rules">Склади слово із букв</h4>
+        <div id="words1">
+            <div class="game-block">
+                <div class="word-game1" id="closet">
+                    <img src="word-game/l.svg" class="letter">
+                    <img src="word-game/o.svg" class="letter">
+                    <img src="word-game/t.svg" class="letter">
+                    <img src="word-game/e.svg" class="letter">
+                    <img src="word-game/s.svg" class="letter">
+                    <img src="word-game/c.svg" class="letter">
+                </div>
+                <input type="text" class="word-input" placeholder="Введи слово">
+                <button onclick="checkSingleInput('closet')" class="check-btn" data-i18n="games.check">Перевірити</button>
+            </div>
+            <div class="game-block">
+                <div class="word-game1" id="bed">
+                    <img src="word-game/e.svg" class="letter">
+                    <img src="word-game/d.svg" class="letter">
+                    <img src="word-game/b.svg" class="letter">
+                </div>
+                <input type="text" class="word-input" placeholder="Введи слово">
+                <button onclick="checkSingleInput('bed')" class="check-btn" data-i18n="games.check">Перевірити</button>
+            </div>
+            <div class="game-block">
+                <div class="word-game1" id="tomato">
+                    <img src="word-game/a.svg" class="letter">
+                    <img src="word-game/t.svg" class="letter">
+                    <img src="word-game/m.svg" class="letter">
+                    <img src="word-game/o.svg" class="letter">
+                    <img src="word-game/t.svg" class="letter">
+                    <img src="word-game/o.svg" class="letter">
+                </div>
+                <input type="text" class="word-input" placeholder="Введи слово">
+                <button onclick="checkSingleInput('tomato')" class="check-btn" data-i18n="games.check">Перевірити</button>
+            </div> 
+            <div class="game-block">
+                <div class="word-game1" id="apple">
+                    <img src="word-game/e.svg" class="letter">
+                    <img src="word-game/a.svg" class="letter">
+                    <img src="word-game/l.svg" class="letter">
+                    <img src="word-game/p.svg" class="letter">
+                    <img src="word-game/p.svg" class="letter">
+                </div>
+                <input type="text" class="word-input" placeholder="Введи слово">
+                <button onclick="checkSingleInput('apple')" class="check-btn" data-i18n="games.check">Перевірити</button>
+            </div>           
+            <div class="game-block">
+                <div class="word-game1" id="pepper">
+                    <img src="word-game/p.svg" class="letter">
+                    <img src="word-game/p.svg" class="letter">
+                    <img src="word-game/r.svg" class="letter">
+                    <img src="word-game/e.svg" class="letter">
+                    <img src="word-game/e.svg" class="letter">
+                    <img src="word-game/p.svg" class="letter">
+                </div>
+                <input type="text" class="word-input" placeholder="Введи слово">
+                <button onclick="checkSingleInput('pepper')" class="check-btn" data-i18n="games.check">Перевірити</button>
+            </div>
+            <div class="game-block">
+                <div class="word-game1" id="tiger">
+                    <img src="word-game/g.svg" class="letter">
+                    <img src="word-game/e.svg" class="letter">
+                    <img src="word-game/t.svg" class="letter">
+                    <img src="word-game/i.svg" class="letter">
+                    <img src="word-game/r.svg" class="letter">
+                </div>
+                <input type="text" class="word-input" placeholder="Введи слово">
+                <button onclick="checkSingleInput('tiger')" class="check-btn" data-i18n="games.check">Перевірити</button>
+            </div>
+            
+        </div>
+
+        <h4 data-i18n="game1.rule2" class="rules">Обери правильний переклад</h4>
+        <div id="words2">            
+            <div class="game-block">
+                <div class="word-game2 word" id="horse">
+                    <img src="word-game/h.svg" class="letter">
+                    <img src="word-game/o.svg" class="letter">
+                    <img src="word-game/r.svg" class="letter">
+                    <img src="word-game/s.svg" class="letter">
+                    <img src="word-game/e.svg" class="letter">
+                </div>
+                <select>
+                    <option value="" data-i18n="games.choice">Обери варіант</option>
+                    <option value="horse" data-i18n="game1.horse">Кінь</option>
+                    <option value="elephant" data-i18n="game1.elephant">Слон</option>
+                    <option value="bed" data-i18n="game1.bed">Кровать</option>
+                </select>
+                <button onclick="checkTranslate('horse')" class="check-btn" data-i18n="games.check">Перевірити</button>
+            </div>
+
+            <div class="game-block">
+                <div class="word-game2 word" id="fish">
+                    <img src="word-game/f.svg" class="letter">
+                    <img src="word-game/i.svg" class="letter">
+                    <img src="word-game/s.svg" class="letter">
+                    <img src="word-game/h.svg" class="letter">
+                </div>
+                <select>
+                    <option value="" data-i18n="games.choice">Обери варіант</option>
+                    <option value="fridge" data-i18n="game1.fridge">Холодильник</option>
+                    <option value="fish" data-i18n="game1.fish">Риба</option>
+                    <option value="fox" data-i18n="game1.fox">Лисиця</option>
+                </select>
+                <button onclick="checkTranslate('fish')" class="check-btn" data-i18n="games.check">Перевірити</button>
+            </div>
+
+            <div class="game-block">
+                <div class="word-game2 word" id="chair">
+                    <img src="word-game/c.svg" class="letter">
+                    <img src="word-game/h.svg" class="letter">
+                    <img src="word-game/a.svg" class="letter">
+                    <img src="word-game/i.svg" class="letter">
+                    <img src="word-game/r.svg" class="letter">
+                </div>
+                <select>
+                    <option value="" data-i18n="games.choice">Обери варіант</option>
+                    <option value="cherry" data-i18n="game1.cherry">Вишня</option>
+                    <option value="table" data-i18n="game1.table">Стол</option>
+                    <option value="chair" data-i18n="game1.chair">Стілець</option>
+                </select>
+                <button onclick="checkTranslate('chair')" class="check-btn" data-i18n="games.check">Перевірити</button>
+            </div>
+        </div>
+
+        <h4 data-i18n="game1.rule3" class="rules">Обери правильну букву</h4>
+        <div id="words3">
+            <div class="game-block">
+                <div class="word-game3">
+                    <img src="word-game/r.svg" class="letter">
+                    <img src="word-game/u.svg" class="letter">
+                    <img src="word-game/word-bg.svg" class="letter">
+                    <img src="word-game/e.svg" class="letter">
+                    <img src="word-game/r.svg" class="letter">
+                </div>
+                <div class="word-options">
+                    <label>
+                        <input type="radio" name="ruler" value="m">
+                        <img src="word-game/m.svg" class="letter">
+                    </label>
+                    <label>
+                        <input type="radio" name="ruler" value="v">
+                        <img src="word-game/v.svg" class="letter">
+                    </label>
+                    <label>
+                        <input type="radio" name="ruler" value="l">
+                        <img src="word-game/l.svg" class="letter">
+                    </label>
+                </div>
+                <button onclick="checkLetter('ruler', 'l')" class="check-btn" data-i18n="games.check">Перевірити</button>
+            </div>
+            <div class="game-block">      
+                <div class="word-game3">
+                    <img src="word-game/r.svg" class="letter">
+                    <img src="word-game/word-bg.svg" class="letter">
+                    <img src="word-game/b.svg" class="letter">
+                    <img src="word-game/b.svg" class="letter">
+                    <img src="word-game/i.svg" class="letter">
+                    <img src="word-game/t.svg" class="letter">
+                </div>
+                <div class="word-options">
+                    <label>
+                        <input type="radio" name="rabbit" value="e">
+                        <img src="word-game/e.svg" class="letter">
+                    </label>
+                    <label>
+                        <input type="radio" name="rabbit" value="a">
+                        <img src="word-game/a.svg" class="letter">
+                    </label>
+                    <label>
+                        <input type="radio" name="rabbit" value="o">
+                        <img src="word-game/o.svg" class="letter">
+                    </label>
+                </div>
+                <button onclick="checkLetter('rabbit', 'a')" class="check-btn" data-i18n="games.check">Перевірити</button>
+                </div>
+            <div class="game-block">
+                <div class="word-game3">
+                    <img src="word-game/o.svg" class="letter">
+                    <img src="word-game/n.svg" class="letter">
+                    <img src="word-game/word-bg.svg" class="letter">
+                    <img src="word-game/o.svg" class="letter">
+                    <img src="word-game/n.svg" class="letter">
+                </div>
+                <div class="word-options">
+                    <label>
+                        <input type="radio" name="onion" value="i">
+                        <img src="word-game/i.svg" class="letter">
+                    </label>
+                    <label>
+                        <input type="radio" name="onion" value="p">
+                        <img src="word-game/p.svg" class="letter">
+                    </label>
+                    <label>
+                        <input type="radio" name="onion" value="y">
+                        <img src="word-game/y.svg" class="letter">
+                    </label>
+                </div>
+                <button onclick="checkLetter('onion', 'i')" class="check-btn" data-i18n="games.check">Перевірити</button>
+            </div>
+        </div>
+        
+
+        <div id="game-link">
+            <h5><a href="game2.html" data-i18n="games.game2">Гра "Картки"</a></h5>
+            <h5><a href="practice.html" data-i18n="games.practice">Практичні завдання</a></h5>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-contacts">
+            <a href="#">
+                <img src="add-imgs/telegram.svg" alt="Telegram" class="contact-icon" />
+            </a>
+            <a href="#">
+                <img src="add-imgs/discord.svg" alt="Discord" class="contact-icon" />
+            </a>
+            <a href="#">
+                <img src="add-imgs/linkedin.svg" alt="LinkedIn" class="contact-icon" />
+            </a>
+            <a href="#">
+                <img src="add-imgs/instagram.svg" alt="Instagram" class="contact-icon" />
+            </a>
+
+            <div class="contact-reveal" data-type="email">
+                <img src="add-imgs/online.svg" class="contact-icon">
+                <span class="info-text">Email: kath_tutor@gmail.com</span>
+            </div>
+
+            <div class="contact-reveal" data-type="address">
+                <img src="add-imgs/offline.svg" class="contact-icon">
+                <span class="info-text" data-i18n="footer.address">Одеса, вул. М. Жукова, 25</span>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/translations.js"></script>
+    <script src="js/switcher.js"></script>
+    <script src="js/game1.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

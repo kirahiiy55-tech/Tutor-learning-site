@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language learning add (Yakimova)</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/add.css" rel="stylesheet">
+
+    <div class="sticky-top" id="header">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container-fluid" id="nav-container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto" id="nav-list">
+                        <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav.home">Головна</a></li>
+                        <li class="nav-item"><a class="nav-link" href="game1.html" data-i18n="nav.game1">Словотвір</a></li>
+                        <li class="nav-item"><a class="nav-link" href="game2.html" data-i18n="nav.game2">Картки</a></li>
+                        <li class="nav-item"><a class="nav-link" href="practice.html" data-i18n="nav.practice">Практика</a></li>
+                        <li class="nav-item"><a class="nav-link" href="clues.html" data-i18n="nav.clues">Ключі</a></li>
+                    </ul>
+                </div>
+
+                <div class="d-flex ms-3 ms-md-0" id="class-start">
+                    <h5>
+                        <a href="https://kirahiiy55-tech.github.io/Tutor-site/form.html" target="_blank"
+                            rel="noopener noreferrer">
+                            <span data-i18n="nav.classes">Навчання</span>
+                        </a>
+                    </h5>
+                    <span class="divider">|</span>
+                    <button onclick="setLanguage('ua')" class="lang">UA</button>
+                    <span class="divider">|</span>
+                    <button onclick="setLanguage('ru')" class="lang">RU</button>
+                </div>
+            </div>
+        </nav>
+    </div>
+</head>
+<body>
+    <main>
+        <div>
+            <h3 class="rules" data-i18n="clues.cards">Підказки до ігор "Картки"</h3>
+            <div id="card-clues-page">
+                <div class="card-clue">
+                    <img src="card-game/apple.svg">
+                    <p>Apple</p>
+                </div>
+                <div class="card-clue">
+                    <img src="card-game/banana.svg">
+                    <p>Banana</p>
+                </div>
+                <div class="card-clue">
+                    <img src="card-game/bear.svg">
+                    <p>Bear</p>
+                </div>
+                <div class="card-clue">
+                    <img src="card-game/bed.svg">
+                    <p>Bed</p>
+                </div>
+                <div class="card-clue">
+                    <img src="card-game/book.svg">
+                    <p>Book</p>
+                </div>
+                <div class="card-clue">
+                    <img src="card-game/cat.svg">
+                    <p>Cat</p>
+                </div>
+                <div class="card-clue">
+                    <img src="card-game/chair.svg">
+                    <p>Chair</p>
+                </div>
+                <div class="card-clue">
+                    <img src="card-game/cherry.svg">
+                    <p>Cherry</p>
+                </div>
+                <div class="card-clue">
+                    <img src="card-game/closet.svg">
+                    <p>Closet</p>
+                </div>
+                <div class="card-clue">
+                    <img src="card-game/coconut.svg">
+                    <p>Coconut</p>
+                </div>
+                <div class="card-clue">
+                    <img src="card-game/cucumber.svg">
+                    <p>Cucumber</p>
+                </div>
+                <div class="card-clue">
+                    <img src="card-game/dog.svg">
+                    <p>Dog</p>
+                </div>
+                <div class="card-clue">
+                    <img src="card-game/elephant.svg">
+                    <p>Elephant</p>
+                </div>
+                <div class="card-clue">
+                    <img src="card-game/fish.svg">
+                    <p>Fish</p>
+                </div>
+                <div class="card-clue">
+                    <img src="card-game/fox.svg">
+                    <p>Fox</p>
+                </div>
+                <div class="card-clue">
+                    <img src="card-game/fridge.svg">
+                    <p>Fridge</p>
+                </div>
+                <div class="card-clue">
+                    <img src="card-game/giraffe.svg">
+                    <p>Giraffe</p>
+                </div>
+                <div class="card-clue">
+                    <img src="card-game/horse.svg">
+                    <p>Horse</p>
+                </div>
+                <div class="card-clue">
+                    <img src="card-game/lemon.svg">
+                    <p>Lemon</p>
+                </div>
+                <div class="card-clue">
+                    <img src="card-game/notebook.svg">
+                    <p>Notebook</p>
+                </div>
+                <div class="card-clue">
+                    <img src="card-game/onion.svg">
+                    <p>Onion</p>
+                </div>
+                <div class="card-clue">
+                    <img src="card-game/pen.svg">
+                    <p>Pen</p>
+                </div>
+                <div class="card-clue">
+                    <img src="card-game/pensil.svg">
+                    <p>Pensil</p>
+                </div>
+                <div class="card-clue">
+                    <img src="card-game/pepper.svg">
+                    <p>Pepper</p>
+                </div>
+                <div class="card-clue">
+                    <img src="card-game/pineapple.svg">
+                    <p>Pineapple</p>
+                </div>
+                <div class="card-clue">
+                    <img src="card-game/potato.svg">
+                    <p>Potato</p>
+                </div>
+                <div class="card-clue">
+                    <img src="card-game/rabbit.svg">
+                    <p>Rabbit</p>
+                </div>
+                <div class="card-clue">
+                    <img src="card-game/ruler.svg">
+                    <p>Ruler</p>
+                </div>
+                <div class="card-clue">
+                    <img src="card-game/scrissors.svg">
+                    <p>Scrissors</p>
+                </div>
+                <div class="card-clue">
+                    <img src="card-game/table.svg">
+                    <p>Table</p>
+                </div>
+                <div class="card-clue">
+                    <img src="card-game/tiger.svg">
+                    <p>Tiger</p>
+                </div>
+                <div class="card-clue">
+                    <img src="card-game/tomato.svg">
+                    <p>Tomato</p>
+                </div>
+                <div class="card-clue">
+                    <img src="card-game/vase.svg">
+                    <p>Vase</p>
+                </div>
+                <div class="card-clue">
+                    <img src="card-game/watermelon.svg">
+                    <p>Watermelon</p>
+                </div>
+                <div class="card-clue">
+                    <img src="card-game/wolf.svg">
+                    <p>Wolf</p>
+                </div>
+                <div class="card-clue">
+                    <img src="card-game/zebra.svg">
+                    <p>Zebra</p>
+                </div>
+            </div>
+
+            <div id="word-clues-page">
+                <h3 class="rules" data-i18n="clues.words">Відповіді до ігор "Слова"</h3>
+                
+                <h5 data-i18n="clues.game1" class="rules">Відповіді до першої гри</h5>
+                <div id="game1-clue">
+                    <div class="game-block">
+                        <div class="word-game1">
+                            <img src="word-game/c.svg" class="letter">
+                            <img src="word-game/l.svg" class="letter">
+                            <img src="word-game/o.svg" class="letter">
+                            <img src="word-game/s.svg" class="letter">
+                            <img src="word-game/e.svg" class="letter">
+                            <img src="word-game/t.svg" class="letter">
+                        </div>
+                    </div>
+                    <div class="game-block">
+                        <div class="word-game1">
+                            <img src="word-game/b.svg" class="letter">
+                            <img src="word-game/e.svg" class="letter">
+                            <img src="word-game/d.svg" class="letter">
+                        </div>
+                    </div>
+                    <div class="game-block">
+                        <div class="word-game1">
+                            <img src="word-game/t.svg" class="letter">
+                            <img src="word-game/o.svg" class="letter">
+                            <img src="word-game/m.svg" class="letter">
+                            <img src="word-game/a.svg" class="letter">
+                            <img src="word-game/t.svg" class="letter">
+                            <img src="word-game/o.svg" class="letter">
+                        </div>
+                    </div>
+                    <div class="game-block">
+                        <div class="word-game1">
+                            <img src="word-game/a.svg" class="letter">
+                            <img src="word-game/p.svg" class="letter">
+                            <img src="word-game/p.svg" class="letter">
+                            <img src="word-game/l.svg" class="letter">
+                            <img src="word-game/e.svg" class="letter">
+                        </div>
+                    </div>
+                    <div class="game-block">
+                        <div class="word-game1">
+                            <img src="word-game/p.svg" class="letter">
+                            <img src="word-game/e.svg" class="letter">
+                            <img src="word-game/p.svg" class="letter">
+                            <img src="word-game/p.svg" class="letter">
+                            <img src="word-game/e.svg" class="letter">
+                            <img src="word-game/r.svg" class="letter">
+                        </div>
+                    </div>
+                    <div class="game-block">
+                        <div class="word-game1">
+                            <img src="word-game/t.svg" class="letter">
+                            <img src="word-game/i.svg" class="letter">
+                            <img src="word-game/g.svg" class="letter">
+                            <img src="word-game/e.svg" class="letter">
+                            <img src="word-game/r.svg" class="letter">
+                        </div>
+                    </div>
+                </div>
+                
+                <h4 data-i18n="clues.game2" class="rules">Відповіді до другої гри</h4>
+                <h5 class="rules">Українська</h5>
+                <div id="game2-clue" class="ukr">
+                    <div class="game-block">
+                        <div class="word-game1">
+                            <img src="word-game/k.svg" class="letter">
+                            <img src="word-game/i.svg" class="letter">
+                            <img src="word-game/h.svg" class="letter">
+                            <img src="word-game/soft.svg" class="letter">
+                        </div>
+                    </div>
+                    <div class="game-block">
+                        <div class="word-game1">
+                            <img src="word-game/p.svg" class="letter">
+                            <img src="word-game/rus-i.svg" class="letter">
+                            <img src="word-game/rus-b.svg" class="letter">
+                            <img src="word-game/a.svg" class="letter">
+                        </div>
+                    </div>
+                    <div class="game-block">
+                        <div class="word-game1">
+                            <img src="word-game/c.svg" class="letter">
+                            <img src="word-game/t.svg" class="letter">
+                            <img src="word-game/i.svg" class="letter">
+                            <img src="word-game/rus-l.svg" class="letter">
+                            <img src="word-game/e.svg" class="letter">
+                            <img src="word-game/rus-ts.svg" class="letter">
+                            <img src="word-game/soft.svg" class="letter">
+                        </div>
+                    </div>
+                </div>
+
+                <h5 class="rules">Русский</h5>
+                <div id="game2-clue">
+                    <div class="game-block">
+                        <div class="word-game1">
+                            <img src="word-game/k.svg" class="letter">
+                            <img src="word-game/o.svg" class="letter">
+                            <img src="word-game/h.svg" class="letter">
+                            <img src="word-game/soft.svg" class="letter">
+                        </div>
+                    </div>
+                    <div class="game-block">
+                        <div class="word-game1">
+                            <img src="word-game/p.svg" class="letter">
+                            <img src="word-game/rus-y.svg" class="letter">
+                            <img src="word-game/rus-b.svg" class="letter">
+                            <img src="word-game/a.svg" class="letter">
+                        </div>
+                    </div>
+                    <div class="game-block">
+                        <div class="word-game1">
+                            <img src="word-game/c.svg" class="letter">
+                            <img src="word-game/t.svg" class="letter">
+                            <img src="word-game/rus-u.svg" class="letter">
+                            <img src="word-game/rus-l.svg" class="letter">
+                        </div>
+                    </div>
+                </div>
+                
+                <h4 data-i18n="clues.game3" class="rules">Відповіді до третьої гри</h4>
+                <div id="game3-clue">
+                    <div class="game-block">
+                        <div class="word-game1">
+                            <img src="word-game/r.svg" class="letter">
+                            <img src="word-game/u.svg" class="letter">
+                            <img src="word-game/l.svg" class="letter" id="clue-letter">
+                            <img src="word-game/e.svg" class="letter">
+                            <img src="word-game/r.svg" class="letter">
+                        </div>
+                    </div>
+                          
+                    <div class="game-block">
+                        <div class="word-game1">
+                            <img src="word-game/r.svg" class="letter">
+                            <img src="word-game/a.svg" class="letter" id="clue-letter">
+                            <img src="word-game/b.svg" class="letter">
+                            <img src="word-game/b.svg" class="letter">
+                            <img src="word-game/i.svg" class="letter">
+                            <img src="word-game/t.svg" class="letter">
+                        </div>
+                    </div>
+                        
+                    <div class="game-block">
+                        <div class="word-game3">
+                            <img src="word-game/o.svg" class="letter">
+                            <img src="word-game/n.svg" class="letter">
+                            <img src="word-game/i.svg" class="letter" id="clue-letter">
+                            <img src="word-game/o.svg" class="letter">
+                            <img src="word-game/n.svg" class="letter">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-contacts">
+            <a href="#">
+                <img src="add-imgs/telegram.svg" alt="Telegram" class="contact-icon" />
+            </a>
+            <a href="#">
+                <img src="add-imgs/discord.svg" alt="Discord" class="contact-icon" />
+            </a>
+            <a href="#">
+                <img src="add-imgs/linkedin.svg" alt="LinkedIn" class="contact-icon" />
+            </a>
+            <a href="#">
+                <img src="add-imgs/instagram.svg" alt="Instagram" class="contact-icon" />
+            </a>
+
+            <div class="contact-reveal" data-type="email">
+                <img src="add-imgs/online.svg" class="contact-icon">
+                <span class="info-text">Email: kath_tutor@gmail.com</span>
+            </div>
+
+            <div class="contact-reveal" data-type="address">
+                <img src="add-imgs/offline.svg" class="contact-icon">
+                <span class="info-text" data-i18n="footer.address">Одеса, вул. М. Жукова, 25</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/switcher.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

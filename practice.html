@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language learning add (Yakimova)</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/add.css" rel="stylesheet">
+
+    <div class="sticky-top" id="header">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container-fluid" id="nav-container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto" id="nav-list">
+                        <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav.home">Головна</a></li>
+                        <li class="nav-item"><a class="nav-link" href="game1.html" data-i18n="nav.game1">Словотвір</a></li>
+                        <li class="nav-item"><a class="nav-link" href="game2.html" data-i18n="nav.game2">Картки</a></li>
+                        <li class="nav-item"><a class="nav-link" href="practice.html" data-i18n="nav.practice">Практика</a></li>
+                        <li class="nav-item"><a class="nav-link" href="clues.html" data-i18n="nav.clues">Ключі</a></li>
+                    </ul>
+                </div>
+
+                <div class="d-flex ms-3 ms-md-0" id="class-start">
+                    <h5>
+                        <a href="https://kirahiiy55-tech.github.io/Tutor-site/form.html" target="_blank" rel="noopener noreferrer">
+                            <span data-i18n="nav.classes">Навчання</span>
+                        </a>
+                    </h5>
+                    <span class="divider">|</span>
+                    <button onclick="setLanguage('ua')" class="lang">UA</button>
+                    <span class="divider">|</span>
+                    <button onclick="setLanguage('ru')" class="lang">RU</button>
+                </div>
+            </div>
+        </nav>
+    </div>
+</head>
+
+<body>
+    <main>
+        <h2 id="game-header" data-i18n="games.practice">Практичні завдання</h2>
+        <p class="practice-rules" data-i18n="practice.task">Завдання для підтвердження рівня А1 (Beginner) англійської мови</h4>
+        
+        <div id="practice-block">
+            <h4 data-i18n="practice.rule" class="rules">Обери правильну відповідь</h4>
+            <div>
+                <div class="practice-task">
+                    <p class="task-text">1. Anna ___ a teacher.</p>
+                    <div class="task-item">
+                        <label>
+                            <input type="radio" name="task1" value="correct">
+                            <span>is</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="task1" value="incorrect">
+                            <span>are</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="task1" value="incorrect">
+                            <span>do</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="practice-task">
+                    <p class="task-text">2. I have ___ apple.</p>
+                    <div class="task-item">
+                        <label>
+                            <input type="radio" name="task2" value="incorrect">
+                            <span>some</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="task2" value="correct">
+                            <span>an</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="task2" value="incorrect">
+                            <span>three</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="practice-task">
+                    <p class="task-text">3. Katy ___ to school on holydays.</p>
+                    <div class="task-item">
+                        <label>
+                            <input type="radio" name="task3" value="correct">
+                            <span>doesn`t go</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="task3" value="incorrect">
+                            <span>goes</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="task3" value="incorrect">
+                            <span>don`t go</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="practice-task">
+                    <p class="task-text">4. He goes to school ___ a bus.</p>
+                    <div class="task-item">
+                        <label>
+                            <input type="radio" name="task4" value="incorrect">
+                            <span>in</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="task4" value="incorrect">
+                            <span>at</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="task4" value="correct">
+                            <span>on</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="practice-task">
+                    <p class="task-text">5. Mark watches this movie on ___ .</p>
+                    <div class="task-item">
+                        <label>
+                            <input type="radio" name="task5" value="correct">
+                            <span>TV</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="task5" value="incorrect">
+                            <span>home</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="task5" value="incorrect">
+                            <span>cinema</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="practice-task">
+                    <p class="task-text">6. ___ you like tomatoes?.</p>
+                    <div class="task-item">
+                        <label>
+                            <input type="radio" name="task6" value="incorrect">
+                            <span>Are</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="task6" value="incorrect">
+                            <span>Have</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="task6" value="correct">
+                            <span>Do</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="practice-task">
+                    <p class="task-text">7. A tiger is bigger ___ a cat.</p>
+                    <div class="task-item">
+                        <label>
+                            <input type="radio" name="task7" value="incorrect">
+                            <span>that</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="task7" value="correct">
+                            <span>than</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="task7" value="incorrect">
+                            <span>then</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="practice-task">
+                    <p class="task-text">8. Sonya is a ___ dancer.</p>
+                    <div class="task-item">
+                        <label>
+                            <input type="radio" name="task8" value="incorrect">
+                            <span>best</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="task8" value="correct">
+                            <span>good</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="task8" value="incorrect">
+                            <span>better</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="practice-task">
+                    <p class="task-text">9. My grandmother gave me ___ hryvnas.</p>
+                    <div class="task-item">
+                        <label>
+                            <input type="radio" name="task9" value="correct">
+                            <span>one hundred</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="task9" value="incorrect">
+                            <span>one hundreds</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="task9" value="incorrect">
+                            <span>one hundred`s</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="practice-task">
+                    <p class="task-text">10. Simon ___ has a breakfast before school.</p>
+                    <div class="task-item">
+                        <label>
+                            <input type="radio" name="task10" value="incorrect">
+                            <span>just</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="task10" value="incorrect">
+                            <span>yesterday</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="task10" value="correct">
+                            <span>sometimes</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="practice-btn">
+                    <button onclick="checkPractice()" class="check-btn" data-i18n="games.check">Перевірити</button>
+                    <button onclick="resetPractice()" class="check-btn" data-i18n="games.reset">Скинути</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="game-link">
+            <h5><a href="game1.html" data-i18n="games.game1">Гра "Створи слово"</a></h5>
+            <h5><a href="game2.html" data-i18n="games.game2">Гра "Картки"</a></h5>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-contacts">
+            <a href="#">
+                <img src="add-imgs/telegram.svg" alt="Telegram" class="contact-icon" />
+            </a>
+            <a href="#">
+                <img src="add-imgs/discord.svg" alt="Discord" class="contact-icon" />
+            </a>
+            <a href="#">
+                <img src="add-imgs/linkedin.svg" alt="LinkedIn" class="contact-icon" />
+            </a>
+            <a href="#">
+                <img src="add-imgs/instagram.svg" alt="Instagram" class="contact-icon" />
+            </a>
+
+            <div class="contact-reveal" data-type="email">
+                <img src="add-imgs/online.svg" class="contact-icon">
+                <span class="info-text">Email: kath_tutor@gmail.com</span>
+            </div>
+
+            <div class="contact-reveal" data-type="address">
+                <img src="add-imgs/offline.svg" class="contact-icon">
+                <span class="info-text" data-i18n="footer.address">Одеса, вул. М. Жукова, 25</span>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/translations.js"></script>
+    <script src="js/switcher.js"></script>
+    <script src="js/practice.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
